@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+    background-color:rgb(87, 75, 75);
+    opacity: 0.9;
+}
+body {
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+    /*background-image:url(images/背景.jpeg);*/
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #7C5119;
+    text-decoration: none;
+}
+@media(max-width:767px){
+    img{max-width: 100%;}
+}
+
+.main{
+    display: block;
+    position: relative;
+    left:-35px;
+    width:1280px;
+    height:760px;
+    margin:0 auto;
+    text-align: center;
+}
+.logo img{
+    
+    width:500px;
+    height:500px;
+    transform:rotate(-45deg);
+    position:absolute;
+    top:-260px;
+    left:-255px;
+    z-index: 25;
+    margin:0 auto;
+}
+.item-l{
+    display:inline-block;
+    transform:rotate(-135deg);
+    position:absolute;
+    left:81px;
+    top:90px;
+    z-index: 30;
+}
+.item-l img{
+    width:550px;
+}
+.item-m img{
+    width:366px;
+    height:400px;
+    position:absolute;
+    top:360px;
+    left:-8px;
+    z-index: 15;
+}
+
+.item-s img{
+    display: inline-block;
+    
+    position:absolute;
+    top:-131px;
+    left:350px;
+    z-index: 10;
+}
+.item-ss img{
+    height:768px;
+    width:1280px;
+   background-color: rgb(87, 81, 81);
+   display:inline-block;
+position:absolute;
+top:-20px;
+right:0;
+z-index: 1;
+}
+.fa{
+    position: absolute;
+    top:180px;
+    left:725px;
+    color:rgba(22, 139, 185, 0.836);
+    z-index: 40;
+    animation: slidein 3s ease 0s 1 forwards;
+}
+@keyframes slidein {
+    0%{opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  }
+.main-menu{
+    display: block;
+    text-align: center;
+    margin:50px auto;
+    width:1326px;
+    position: relative;
+    /*background-image:url(images/背景.jpeg)*/
+}
+.main-menu-item{
+    display:flex;
+}
+.main-menu h1{
+    font-size:5.0rem;
+    color:rgba(227, 243, 227, 0.801);
+    margin:50px 0;
+}
+.main-menu h2{
+    display:inline-block;
+    position: absolute;
+    top:700px;
+    left:130px;
+    margin-top:20px;
+    font-size:1.8rem;
+    color:rgba(227, 243, 227, 0.801);
+}
+.light{
+    position:absolute;
+    top:45px;
+    right:120px;
+display:inline-block;
+
+
+}
+.main-menu p{
+    display:inline-block;
+    font-size:2.0rem;
+    width:800px;
+    margin:230px 50px 0 auto;
+    line-height: 30px;
+    color:rgba(237, 232, 106);
+}
+.product{
+     display:inline-block;
+     margin-left:30px;
+    
+}
+.sofa{
+    display: inline-block;
+    position:absolute;
+    top:550px;
+    right:100px;
+}
+.sidetable{
+    display: inline-block;
+    position:absolute;
+    top:550px;
+    left:650px;
+}
+footer{
+    display:block;
+    text-align: center;
+    margin:100px auto 30px;
+}
